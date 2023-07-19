@@ -58,6 +58,7 @@ def replay(fn: Callable):
 
 class Cache:
     '''Cache redis class'''
+
     def __init__(self):
         '''flush and store instance '''
         self._redis = redis.Redis(host='localhost', port=6379, db=0)
